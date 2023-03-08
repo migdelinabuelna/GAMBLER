@@ -22,7 +22,7 @@ const button = document.getElementById('betting');
 button.addEventListener('click', playSlotMachine); //--> this here initiates the playSlotMachine so that we can 
 
 //
-let slots = { 
+let slots = { // we created an object here to identify the image that gets shuffled randomly 
     a: "",
     b: "",
     c: ""
@@ -32,6 +32,7 @@ function playSlotMachine() {
 // we are selecting the photos id and assigning it to the picture element
 const picture = document.querySelector('#photos') 
 picture.innerHTML = "" // empty string to clear out the main tag of all the image tags so that evey time you click the images reset 
+
 const star = document.createElement('img')
 star.id = 'star'
 slots.a = getRandomImages(); //<-we are calling the get random images function - use () when calling a functio
@@ -63,7 +64,7 @@ function displayMessage() {
     //we want to see if each of the elements source property are equal to eachother
 
   if (slots.a === slots.b && slots.b === slots.c) { 
-    document.getElementById('message').innerHTML = ('Win Win Win'); //we are targetting the message id within the header tag to then display Win Win Win inside HTML
+    document.getElementById('message').innerHTML = ('$$$ Win Win Win $$$'); //we are targetting the message id within the header tag to then display Win Win Win inside HTML
     document.getElementById('beat').play(); //<this is identifying your audio tag in HTML with the beat id and is is instructing to play the audio if condition it met
 } else  { 
     document.getElementById('message').innerHTML = ('Sorry! Try Again');

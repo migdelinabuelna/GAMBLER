@@ -2,11 +2,19 @@ h1 {
 text-align: center;
 }
 
-#p-balance {
-    color: red;
-    
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-main {
-    color: pink;
+h1 {
+    color: #66FF00;
+    font-size: 100px;
 }
+
+header {
+    color: #FF007F;
+    font-size: 50px;
+}
+
