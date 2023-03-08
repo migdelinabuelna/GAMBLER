@@ -58,51 +58,22 @@ displayMessage() //--> this is calling on the next function to run
 }
 
 
-
-// slotImages=[] above is array-like but not an actual array. You cannot use regualar array methods
-
-// star, flower, and heart are all id's that hold the array-like slotImages 
-
-// perhaps we are looking at a prototype?
-
 function displayMessage() {
     // sellect all of the elements by class name using queryselectorall 
     //we want to see if each of the elements source property are equal to eachother
 
   if (slots.a === slots.b && slots.b === slots.c) { 
     document.getElementById('message').innerHTML = ('Win Win Win'); //we are targetting the message id within the header tag to then display Win Win Win inside HTML
+    document.getElementById('beat').play(); //<this is identifying your audio tag in HTML with the beat id and is is instructing to play the audio if condition it met
 } else  { 
     document.getElementById('message').innerHTML = ('Sorry! Try Again');
+    document.getElementById('lost').play();
  } 
 
  }
 
-    // console.log(slots) // <-- we use this to check the work that we did. this should show the different pictures with the keys a, b, and c 
-    // 
-
-
-
-
-// if (star.slotImages === flower.slotImages && flower.slotImages === heart.slotImages ) { 
-
-//maybe look into indexOf or for each?????
-
-
-
-// if (star === flower && flower === heart) { 
-//     document.getElementById('message').innerHTML = ('Win Win Win'); //we are targetting the message id within the header tag to then display Win Win Win inside HTML
-// } else { 
-//     document.getElementByID('message').innerHTML = ('Sorry, Try Again');
-//   }
-
-
-//add display function to the event listener? Internet is ok but im not sure about logic 
-
-//img flower was assigned the id of 'flower 
-//img star was assined the id of 'star'
-//img heart was assigned the id of 'heart"
-
-// we need a function that when each element land on the same index of the array, we will display a message 
+    // console.log(slots) // <--this should show the different pictures with the keys a, b, and c as asigned above
+    
 
 
 
@@ -120,12 +91,6 @@ function displayMessage() {
   /*----- event listeners -----*/
 
   /*----- functions -----*/
-//each bet will be $5 dollars - write a function that deducts
-// $5 with each bet <--perhaps
-
-//write a function that if the player matches three items they win
-// &&&& add a certain ammount to the balance 
-// &&& play the money sound in our files 
 
 
 
