@@ -2,7 +2,7 @@
 //Created an array of images with index 0-2
 
 const slotImages = [ 
-    "imgs/star.png",
+    "imgs/skull.png",
     "imgs/flower.png",
     "imgs/heart.png",
 ]
@@ -30,14 +30,17 @@ let slots = { // we created an object here to identify the image that gets shuff
 
 function playSlotMachine() {
 // we are selecting the photos id and assigning it to the picture element
-const picture = document.querySelector('#photos') 
-picture.innerHTML = "" // empty string to clear out the main tag of all the image tags so that evey time you click the images reset 
+// const picture = document.querySelector('#photos') 
+// picture.innerHTML = "" // empty string to clear out the main tag of all the image tags so that evey time you click the images reset 
 
-const star = document.createElement('img')
-star.id = 'star'
+document.getElementById('photos').innerHTML = "" // <-- this is the same! why are we assining a new value photos?
+
+
+const skull = document.createElement('img')
+skull.id = 'skull'
 slots.a = getRandomImages(); //<-we are calling the get random images function - use () when calling a functio
-star.src = slots.a
-document.getElementById('photos').appendChild(star)
+skull.src = slots.a
+document.getElementById('photos').appendChild(skull)
 
 
 const flower =  document.createElement('img')
@@ -59,6 +62,7 @@ displayMessage() //--> this is calling on the next function to run
 }
 
 
+
 function displayMessage() {
     // sellect all of the elements by class name using queryselectorall 
     //we want to see if each of the elements source property are equal to eachother
@@ -75,9 +79,6 @@ function displayMessage() {
 
     // console.log(slots) // <--this should show the different pictures with the keys a, b, and c as asigned above
     
-
-
-
 
 
 /*----- constants -----*/

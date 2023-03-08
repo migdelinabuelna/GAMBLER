@@ -1,20 +1,57 @@
-h1 {
-text-align: center;
+
+html { 
+    
+    background: url('https://i.imgur.com/Xg0T6Lq.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
 }
 
 body {
+     /* display: grid | inline-grid; */
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: flex-end;
+    align-items: center; /* aligns them from side to side. does it take care for text too?*/
+    /* text-align: center; */
+   gap: 50px;
+   background-color: rgba(0,0,0,0.3);
+  
+
+
 }
 
+    @keyframes blink{
+        50% {
+            opacity: 0
+        }
+    }
+
 h1 {
-    color: #66FF00;
+    color: white;
     font-size: 100px;
+    animation: blink 1.5s linear infinite;
 }
 
 header {
-    color: #FF007F;
+    color: #C264FF;
     font-size: 50px;
 }
 
+main { 
+
+    background-color: rgba(255,255,255,0.5);
+    border-width: 6px;
+    border-style: dotted;
+    border-color: black;
+} 
+
+footer {
+    text-align: center;
+}
+
+#betting {
+    background-color: red;
+    color: white;
+    font-size: 30px;
+}
