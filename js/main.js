@@ -1,37 +1,35 @@
 
-//Created an array of images with index 0-2
 
+// Create array. The indexes: 0= skull.png. 1= flower.png, 2= heart.png
 const slotImages = [ 
     "imgs/skull.png",
     "imgs/flower.png",
     "imgs/heart.png",
 ]
 
+
 // create a function that allows you to spin images randomly 
-
-function getRandomImages(){ //generating a random number between 0 and 2 // also the index 0-2 (math random includes decimals & we cannot have decimals in an array)
-    const randomSpin = Math.floor(Math.random() *3) // math floor rounds the number to the lowest whole number (ceiling rounds to the highest whole number )
-    console.log(randomSpin);
-    console.log(slotImages);
-    console.log(slotImages[0]);
-    console.log(slotImages[1]);
-    console.log(slotImages[2]);
-    return slotImages[randomSpin]
+function getRandomImages(){ 
+    const randomSpin = Math.floor(Math.random() *3) // this will generate one of three numbers: 0, 1, or 2 
+    return slotImages[randomSpin] // returns the image/index in slotImages that matches the randomSpin number.
 }
-//  console.log(getRandomImages()); //<not necessary but helps you check your work
 
 
-// //add an event listener for when the bet button is clicked 
 
-const button = document.getElementById('betting');
+ /*----- event listeners -----*/
+//add an event listener to run the playSlotMachine within function when clicked 
+const button = document.getElementById('betting');//asigning new variable 
 button.addEventListener('click', playSlotMachine); //--> this here initiates the playSlotMachine so that we can 
 
-//
+
 let slots = { // we created an object here to identify the image that gets shuffled randomly 
     a: "",
     b: "",
     c: ""
 }
+
+ 
+/*----- functions -----*/
 
 function playSlotMachine() {
 // we are selecting the photos id and assigning it to the picture element
@@ -40,8 +38,10 @@ function playSlotMachine() {
 
 document.getElementById('photos').innerHTML = "" // <-- this is the same! why are we assining a new value photos?
 
-// document.querySelector('#photos') we are selecting the element  photos 
+// document.querySelector('#photos') we are selecting the element with the id photos 
 
+
+//what is this called 
 
 const skull = document.createElement('img')
 skull.id = 'skull'
@@ -88,6 +88,7 @@ function displayMessage() {
     
 
 
+
 /*----- constants -----*/
 
 
@@ -97,11 +98,8 @@ function displayMessage() {
   /*----- cached elements  -----*/
 
 
-  /*----- event listeners -----*/
-
-  /*----- functions -----*/
+ 
 
 
 
 
-console.log("JS TEST MAIN BRANCH!")

@@ -43,6 +43,10 @@ console.log(getRandomImages());
 
 ### addEventListener
 
-Within our HTML we have the <button> and we are giving it a 
+Within our HTML we have the <button> tag with the ID of #betting. We access that element in JS using the ID and we assign it the new variable of button. 
+We then use the button variable, we add the event listener. The event listening will call on the function playSlotMachine when button is chicked. 
 
-"imgs/flower1.png"
+
+
+
+
