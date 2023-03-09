@@ -17,9 +17,9 @@ function getRandomImages(){
 
 
  /*----- event listeners -----*/
-//add an event listener to run the playSlotMachine within function when clicked 
-const button = document.getElementById('betting');//asigning new variable 
-button.addEventListener('click', playSlotMachine); //--> this here initiates the playSlotMachine so that we can 
+// Runs function playSlotMachine when 'button' is clicked.
+const button = document.getElementById('betting'); //asigning new variable 
+button.addEventListener('click', playSlotMachine);
 
 
 let slots = { // we created an object here to identify the image that gets shuffled randomly 
@@ -41,7 +41,7 @@ document.getElementById('photos').innerHTML = "" // <-- this is the same! why ar
 // document.querySelector('#photos') we are selecting the element with the id photos 
 
 
-//what is this called 
+//is there another name to refer to these blocks?
 
 const skull = document.createElement('img')
 skull.id = 'skull'

@@ -3,22 +3,17 @@ html {
     
     background: url('https://i.imgur.com/Xg0T6Lq.jpeg');
     background-size: cover;
-    background-position: center;
-    height: 100%;
-}
+    background-position: center; /* displays a better part of photo on screen*/
+    height: 100%; /*stabalized image when game started*/
+} 
 
 body {
-     /* display: grid | inline-grid; */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center; /* aligns them from side to side. does it take care for text too?*/
-    /* text-align: center; */
-   gap: 50px;
-   background-color: rgba(0,0,0,0.3);
-  
-
-
+    /* justify-content: flex-end; */
+    align-items: center; /*centers horizon . does it take care for text too?*/
+    gap: 50px;
+    background-color: rgba(0,0,0,0.3);
 }
 
     @keyframes blink{
