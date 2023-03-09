@@ -41,6 +41,8 @@ you can console.log the function as follows for more visual details.
 
 console.log(getRandomImages()); 
 
+### addEventListener
 
+Within our HTML we have the <button> and we are giving it a 
 
-
+"imgs/flower1.png"
