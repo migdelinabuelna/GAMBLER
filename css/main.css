@@ -22,7 +22,7 @@ body {
 }
 
     @keyframes blink{
-        50% {
+        25% {
             opacity: 0
         }
     }
@@ -34,8 +34,9 @@ h1 {
 }
 
 header {
-    color: #C264FF;
+    color: red;
     font-size: 50px;
+    background-color: rgba(0,0,0,0.6);
 }
 
 main { 

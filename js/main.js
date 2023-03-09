@@ -11,6 +11,11 @@ const slotImages = [
 
 function getRandomImages(){ //generating a random number between 0 and 2 // also the index 0-2 (math random includes decimals & we cannot have decimals in an array)
     const randomSpin = Math.floor(Math.random() *3) // math floor rounds the number to the lowest whole number (ceiling rounds to the highest whole number )
+    console.log(randomSpin);
+    console.log(slotImages);
+    console.log(slotImages[0]);
+    console.log(slotImages[1]);
+    console.log(slotImages[2]);
     return slotImages[randomSpin]
 }
 //  console.log(getRandomImages()); //<not necessary but helps you check your work
@@ -34,6 +39,8 @@ function playSlotMachine() {
 // picture.innerHTML = "" // empty string to clear out the main tag of all the image tags so that evey time you click the images reset 
 
 document.getElementById('photos').innerHTML = "" // <-- this is the same! why are we assining a new value photos?
+
+// document.querySelector('#photos') we are selecting the element  photos 
 
 
 const skull = document.createElement('img')
