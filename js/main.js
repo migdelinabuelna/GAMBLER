@@ -7,12 +7,12 @@ const slotImages = [    //indexes: 0= skull.png. 1= flower.png, 2= heart.png
 
 // create a function that allows you to spin images randomly 
 function getRandomImages(){ 
-    const randomSpin = Math.floor(Math.random() *3) // this will generate one of three numbers: 0, 1, or 2 
-    return slotImages[randomSpin] // returns the image/index in slotImages that matches the randomSpin number.
+    const randomSpin = Math.floor(Math.random() *3)     // this will generate one of three numbers: 0, 1, or 2 
+    return slotImages[randomSpin]                     // returns the image/index in slotImages that matches the randomSpin number.
 }
 
 // Runs function playSlotMachine when 'button' is clicked.
-const button = document.getElementById('betting');//asigning new variable  
+const button = document.getElementById('betting');      //asigning new variable  
 button.addEventListener('click', playSlotMachine);
 
 

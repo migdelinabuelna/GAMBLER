@@ -3,7 +3,6 @@ Gambler is a slot machine game that you initiate by clicking the "BET" button.
 Once the button is clicked the screen will randomly display three images. 
 If three of the same images appear on the screen, you win the game! Otherwise, you loose, but you get to try again for as many rounds as you'd like. 
 
-
 ## JAVASCRIPT 
 
 ### slotImages array
@@ -26,6 +25,8 @@ If you randomly get 1 from randomSpin, it will return the index 1 image which is
 
 randomSpin 2 = heart.png index2
 
+![getRandomImages](READMEIMGS/getRandomImages.png)
+
 you can console.log the function as follows for more visual details. 
 
 console.log(getRandomImages()); 
@@ -37,6 +38,7 @@ Within our HTML we have the <button> tag with the ID of #betting. We access that
 /*----- event listeners -----*/
 We then use the button variable and we add the event listener to it. The event listener will wait for a click and when it happens it will call on the playSlotMachine function. 
 
+![event listener](READMEIMGS/eventlistener.png)
 
 ### display object
 /*----- state variables -----*/
@@ -48,7 +50,6 @@ We create an object with three keys: a, b, and c. We assined empty strings to ea
  /*----- function -----*/
 We start by selecting our <main> tag using the #photos id that is attached to it. We then assign it an empty string to reset the element content to blank each time the function starts running. 
 
-
 Next, we proceed with our slots. 
 
 We create 
@@ -56,17 +57,6 @@ We create
 ![Create and assign img element](READMEIMGS/img-element.png)
 
 ### function displayMessage 
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -86,5 +76,5 @@ We create
 
 
 
-    //we want to see if each of the elements source property are equal to eachother
+    
 
