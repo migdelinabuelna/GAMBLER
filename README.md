@@ -53,8 +53,9 @@ We then use the button variable and we add the event listener to it. The event l
 
 ### display object
 /*----- state variables -----*/
-We created an object with three keys: a, b, and c. 
+We create an object with three keys: a, b, and c. We assined empty strings to each to each key to create a place holder that we will be using later.
 
+![Display Object](READMEIMGS/display-object.png)
 
 ### function playSlotMachine
  /*----- function -----*/
@@ -63,6 +64,7 @@ We start by selecting our <main> tag using the #photos id that is attached to it
 
 Next, we proceed with our slots. 
 
+We create 
 
 
 
