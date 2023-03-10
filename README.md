@@ -3,6 +3,8 @@ Gambler is a slot machine game that you initiate by clicking the "BET" button.
 Once the button is clicked the screen will randomly display three images. 
 If three of the same images appear on the screen, you win the game! Otherwise, you loose, but you get to try again for as many rounds as you'd like. 
 
+<a href="https://migdelina17.github.io/GAMBLER/"> Play GAMBLER</a>
+
 ## JAVASCRIPT 
 
 ### slotImages array
@@ -41,6 +43,7 @@ We then use the button variable and we add the event listener to it. The event l
 ![event listener](READMEIMGS/eventlistener.png)
 
 ### display object
+/*----- state -----*/
 We create an object with three keys: a, b, and c. We assined empty strings to each to each key to create a place holder that we will be using later.
 
 ![Display Object](READMEIMGS/display-object.png)
