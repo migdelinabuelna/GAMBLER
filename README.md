@@ -74,7 +74,8 @@ We are able to compare the three slots using  using the keys a, b, and c, and th
 ![function displayMessage](READMEIMGS/displayMessage.png)
 
 
-
+##Next Steps: 
+We plan on adding a balance section and setting different betting ammounts. 
 
 
 
