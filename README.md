@@ -41,7 +41,6 @@ We then use the button variable and we add the event listener to it. The event l
 ![event listener](READMEIMGS/eventlistener.png)
 
 ### display object
-/*----- state variables -----*/
 We create an object with three keys: a, b, and c. We assined empty strings to each to each key to create a place holder that we will be using later.
 
 ![Display Object](READMEIMGS/display-object.png)
@@ -52,22 +51,24 @@ We start by selecting our <main> tag using the #photos id that is attached to it
 
 Next, we proceed with our slots. 
 
-We create 
+We create the 'img' element and assign it to variable firstslot. Next we assign key 'a' a new value, and that is the return of the getRandomImages function. 
+
+Next line we change the sourse of the image tag by using the first slot variable and setting it to display.a.
+Lastly, we select the <main> element by the 'photos' id and we append the first slot variable to it. 
+
+We repeat these steps another two times but for keys b and c, and we finish our function by calling on the next which is displayMessage. 
 
 ![Create and assign img element](READMEIMGS/img-element.png)
 
 ### function displayMessage 
+The function starts with the if statement to see if each element source property is equal to one another. 
 
-
-
+Using the boolean if statement, we are comparing two operands with the logical conjuction operator (&&). This will return true, if and only both operands are true. 
+We are able to compare the three slots using  using the keys a, b, and c, and their respective new values.
+ 
+ If contion it met we play the win message and sound. Otherwise, our else statement will play the lost message and sound. 
 
 ![function displayMessage](READMEIMGS/displayMessage.png)
-
-
-
-
-
-
 
 
 
