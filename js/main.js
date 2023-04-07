@@ -30,6 +30,7 @@ display.a = getRandomImages();
 firstslot.src = display.a //changing the source of the image tag
 document.getElementById('photos').appendChild(firstslot) 
 
+
 const secondslot =  document.createElement('img')
 display.b = getRandomImages(); 
 secondslot.src = display.b 
