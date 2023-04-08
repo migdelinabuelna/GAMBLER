@@ -4,7 +4,7 @@ html {
     background: url('https://i.imgur.com/Xg0T6Lq.jpeg');
     background-size: cover;
     background-position: center; 
-    height: 100%; /*stabalized image when game started*/
+    height: 100%; /*stablelized image when game started*/
 } 
 
 body {
@@ -13,6 +13,7 @@ body {
     align-items: center; /*centers horizontally */
     gap: 50px;
     background-color: rgba(0,0,0,0.4);
+    font-family: 'UnifrakturCook', cursive;
 }
 
     @keyframes blink{
@@ -42,8 +43,25 @@ main {
 } 
 
 
+    @keyframes glowing {
+        0% {
+            background-color: #FF0000;
+            box-shadow: 0 0 5px #FF0000;
+        }   
+        50% {
+            background-color: #800000;
+            box-shadow: 0 0 25px #800000;
+        }
+        100% {
+            background-color: #FF0000;
+            box-shadow: 0 0 5px #FF0000;
+        }
+  }
+
 #betting {
     background-color: #FF0000;
     color: #FFFFFF;
     font-size: 30px;
+    border: none;
+    animation: glowing 1300ms infinite;
 }
