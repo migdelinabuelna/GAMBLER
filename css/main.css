@@ -13,7 +13,7 @@ body {
     align-items: center; /*centers horizontally */
     gap: 50px;
     background-color: rgba(0,0,0,0.4);
-    font-family: 'UnifrakturCook', cursive;
+    font-family: cursive;
 }
 
     @keyframes blink{
@@ -64,4 +64,4 @@ main {
     font-size: 30px;
     border: none;
     animation: glowing 1300ms infinite;
-}
+} 
